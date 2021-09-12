@@ -110,6 +110,17 @@ M.deno_fmt = h.make_builtin({
     factory = h.formatter_factory,
 })
 
+M.dune = h.make_builtin({
+    method = FORMATTING,
+    filetypes = { "dune" },
+    generator_opts = {
+        command = "dune",
+        args = { "format-dune-file" },
+        to_stdin = true,
+    },
+    factory = h.formatter_factory,
+})
+
 M.elm_format = h.make_builtin({
     method = FORMATTING,
     filetypes = { "elm" },

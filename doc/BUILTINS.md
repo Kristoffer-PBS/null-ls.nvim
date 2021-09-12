@@ -320,6 +320,24 @@ local sources = { null_ls.builtins.formatting.deno_fmt }
 - `command = "deno"`
 - `args = { "fmt", "-"}`
 
+#### [dune](https://dune.build/)
+
+##### About
+
+Format dune project files.
+
+##### Usage
+
+```lua
+local sources = { null_ls.builtins.formatting.dune }
+```
+
+##### Defaults
+
+- `filetypes = { "dune" }`
+- `command = "dune"`
+- `args = { "format-dune-file" }`
+
 #### [elm-format](https://github.com/avh4/elm-format)
 
 ##### About
